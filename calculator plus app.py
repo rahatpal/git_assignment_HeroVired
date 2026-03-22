@@ -21,6 +21,15 @@ class Calculator:
         return math.sqrt(x)
 
 
+<<<<<<< Updated upstream
+#
+
+=======
+#AArea of Circle function
+    def area_of_circle(self, radius):
+        return math.pi * radius ** 2
+    
+>>>>>>> Stashed changes
 if __name__ == "__main__":
     calculator = Calculator()
 
@@ -34,3 +43,6 @@ if __name__ == "__main__":
 
     num3 = 25
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
+    radius = 5
+    print(f"The area of the circle with radius {radius} = {calculator.area_of_circle(radius)}")
