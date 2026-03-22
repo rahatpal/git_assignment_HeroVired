@@ -1,0 +1,44 @@
+===== REPORT =====
+Sun Mar 22 09:50:28 IST 2026
+CPU + MEMORY
+top - 09:50:28 up 41 min,  2 users,  load average: 0.05, 0.04, 0.01
+Tasks:  33 total,   1 running,  32 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15543.2 total,  14485.1 free,    454.3 used,    603.9 buff/cache
+MiB Swap:   4096.0 total,   4096.0 free,      0.0 used.  14892.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  165860  10880   8192 S   0.0   0.1   0:00.25 systemd
+      2 root      20   0    3120   1920   1920 S   0.0   0.0   0:00.00 init-systemd(Ub
+      8 root      20   0    3136   2044   1920 S   0.0   0.0   0:00.00 init
+DISK
+Filesystem      Size  Used Avail Use% Mounted on
+none            7.6G     0  7.6G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            7.6G  4.0K  7.6G   1% /mnt/wsl
+drivers         464G  232G  233G  50% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.5G  955G   1% /
+none            7.6G   76K  7.6G   1% /mnt/wslg
+none            7.6G     0  7.6G   0% /usr/lib/wsl/lib
+rootfs          7.6G  2.7M  7.6G   1% /init
+none            7.6G  536K  7.6G   1% /run
+none            7.6G     0  7.6G   0% /run/lock
+none            7.6G     0  7.6G   0% /run/shm
+none            7.6G  100K  7.6G   1% /mnt/wslg/versions.txt
+none            7.6G  100K  7.6G   1% /mnt/wslg/doc
+C:\             464G  232G  233G  50% /mnt/c
+D:\             489G  227G  262G  47% /mnt/d
+E:\             932G  491G  441G  53% /mnt/e
+tmpfs           1.6G  8.0K  1.6G   1% /run/user/1000
+tmpfs           1.6G  8.0K  1.6G   1% /run/user/0
+TOP PROCESSES
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 165860 10880 ?        Ss   09:30   0:00 /sbin/init
+root           2  0.0  0.0   3120  1920 ?        Sl   09:30   0:00 /init
+root           8  0.0  0.0   3136  2044 ?        Sl   09:30   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          59  0.0  0.0  47808 14724 ?        S<s  09:30   0:00 /lib/systemd/systemd-journald
+root          87  0.0  0.0  22840  5760 ?        Ss   09:30   0:00 /lib/systemd/systemd-udevd
+systemd+      91  0.0  0.0  26204 13292 ?        Ss   09:30   0:00 /lib/systemd/systemd-resolved
+systemd+      92  0.0  0.0  89364  7168 ?        Ssl  09:30   0:00 /lib/systemd/systemd-timesyncd
+root         141  0.0  0.0   4308  2560 ?        Ss   09:30   0:00 /usr/sbin/cron -f -P
+message+     142  0.0  0.0   8632  3968 ?        Ss   09:30   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+===============
