@@ -20,7 +20,10 @@ class Calculator:
     def square_root(self, x):
         return math.sqrt(x)
 
-
+#Reactange Area function
+    def rectangle_area(self, length, width):
+        return length * width
+    
 if __name__ == "__main__":
     calculator = Calculator()
 
