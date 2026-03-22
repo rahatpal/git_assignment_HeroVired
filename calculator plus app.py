@@ -19,8 +19,15 @@ class Calculator:
 #Square root function
     def square_root(self, x):
         return math.sqrt(x)
-
-
+    
+#Area of Circle function
+    def area_of_circle(self, radius):
+        return math.pi * radius ** 2
+    
+#Reactange Area function
+    def rectangle_area(self, length, width):
+        return length * width
+    
 if __name__ == "__main__":
     calculator = Calculator()
 
@@ -38,3 +45,6 @@ if __name__ == "__main__":
     length = 10
     width = 6
     print(f"The area of the rectangle = {calculator.rectangle_area(length, width)}")
+
+    radius = 5
+    print(f"The area of the circle with radius {radius} = {calculator.area_of_circle(radius)}")
