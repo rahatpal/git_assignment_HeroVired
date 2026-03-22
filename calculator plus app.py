@@ -19,7 +19,11 @@ class Calculator:
 #Square root function
     def square_root(self, x):
         return math.sqrt(x)
-
+    
+#Area of Circle function
+    def area_of_circle(self, radius):
+        return math.pi * radius ** 2
+    
 #Reactange Area function
     def rectangle_area(self, length, width):
         return length * width
